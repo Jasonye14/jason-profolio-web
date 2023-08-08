@@ -1,27 +1,44 @@
-import React, { useEffect, useState } from 'react'
-import NavBar from './components/NavBar'
-import HeroSection from './components/HeroSection'
-import Services from './components/Services'
-import Works from './components/Works'
-
+import React, { useEffect, useState } from "react";
+import NavBar from "./components/NavBar";
+import HeroSection from "./components/HeroSection";
+import Services from "./components/Services";
+import Works from "./components/Works";
+import Timeline from "./components/VerticalTimeLine";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import WorkExperience from "./pages/WorkExperience";
+import About from "./components/About";
+import BackgroundImage from "./components/BackgroundImage";
 
 function App() {
-   return (
+  return (
     <>
-        {/* <button type='button' onClick={handleThemeSwitch} className='fixed z-10 right-2 bg-indigo-500 text-large p-1 round-md'>
+      {/* <button type='button' onClick={handleThemeSwitch} className='fixed z-10 right-2 bg-indigo-500 text-large p-1 round-md'>
             {theme === 'dark' ? 'dark':'light'}
         </button> */}
-        <div className='bg-white dark:bg-slate-900'>
-            <NavBar></NavBar>
-            <div className='max-w-5xl mx-auto w-11/12'>
+      <Router>
+        <div className="bg-white dark:bg-slate-900">
+          <NavBar></NavBar>
+          <div className="max-w-5xl mx-auto w-11/12">
+            <Routes>
+
+            <Route path="/" element={<>
+                <BackgroundImage></BackgroundImage>
                 <HeroSection></HeroSection>
-                <Services></Services>
+                <About></About>
                 <Works></Works>
-            </div>
+                {/* <Timeline></Timeline> */}
+                <Services></Services>
+                
+              </>} />
+
+            <Route path="/experience" element={<WorkExperience />} />
+
+            </Routes>
+          </div>
         </div>
+      </Router>
     </>
-    
-  )
+  );
 }
 
-export default App
+export default App;

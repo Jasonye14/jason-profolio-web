@@ -4,20 +4,18 @@ import {VscCode} from 'react-icons/vsc'
 
 const data = [
     {
-        title: 'Web Design',
+        title: `Computer Science Courses`,
         icon: <MdWeb className='w-full h-full'/>,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida euismod interdum. Curabitur mollis ligula sit amet dolor molestie, bibendum aliquam elit sodales. Phasellus quis consectetur diam.',
+        description: ["Description line 1", "Description line 2"],
+        link: ''
     },
     {
-        title: 'Web Design',
-        icon: <FaHandHoldingHeart className='w-full h-full'/>,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida euismod interdum. Curabitur mollis ligula sit amet dolor molestie, bibendum aliquam elit sodales. Phasellus quis consectetur diam.',
+        title: 'Passion for Challenging Problems',
+        icon: <MdWeb className='w-full h-full'/>,
+        description: `I am invigorated by challenging problems and thrive when presented with complex issues that demand innovative solutions. Whether it's troubleshooting a piece of code or designing an algorithm to perform a specific task, I enjoy delving into the intricacies of a problem and finding the most efficient and effective way to solve it. This enthusiasm for problem-solving not only fuels my academic success but also drives my passion for personal projects and has shaped my aspiration to contribute positively to a future employer.`,
+        link: ''
     },
-    {
-        title: 'Web Design',
-        icon: <VscCode className='w-full h-full'/>,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida euismod interdum. Curabitur mollis ligula sit amet dolor molestie, bibendum aliquam elit sodales. Phasellus quis consectetur diam.',
-    },
+    
 ]
 
 export default data;
