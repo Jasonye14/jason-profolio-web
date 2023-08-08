@@ -1,7 +1,6 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import services from "../data/services";
-import serviceItem from "./ServicesItem";
 import ServicesItem from "./ServicesItem";
 
 function Services() {

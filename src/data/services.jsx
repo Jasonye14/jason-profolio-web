@@ -1,6 +1,6 @@
 import {MdWeb} from 'react-icons/md'
-import {FaHandHoldingHeart} from 'react-icons/fa'
-import {VscCode} from 'react-icons/vsc'
+// import {FaHandHoldingHeart} from 'react-icons/fa'
+// import {VscCode} from 'react-icons/vsc'
 
 const data = [
     {

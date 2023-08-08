@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Works from "./components/Works";
-import Timeline from "./components/VerticalTimeLine";
+//import Timeline from "./components/VerticalTimeLine";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WorkExperience from "./pages/WorkExperience";
 import About from "./components/About";
