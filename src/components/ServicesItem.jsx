@@ -9,12 +9,13 @@ function ServicesItem({title, icon, description}) {
   <h1 className='font-semibold text-lg text-gray-600 dark:text-gray-200 mb-1'>{title}</h1>
   <div className='text-md text-gray-600 dark:text-gray-300'>
   {Array.isArray(description) ? description.map((line, index) => (
-    <p key={index} className='description-item'>
-      {line}
+    <p key={index} className='description-item my-2 leading-6'>
+      	❖ {line}
     </p>
-  )) : <p>{description}</p>}
+  )) : <p className='my-2 leading-6'>{description}</p>}
   </div>
 </div>
+
   )
 }
 

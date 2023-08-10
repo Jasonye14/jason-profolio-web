@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WorkExperience from "./pages/WorkExperience";
 import About from "./components/About";
 import BackgroundImage from "./components/BackgroundImage";
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Works></Works>
                 {/* <Timeline></Timeline> */}
                 <Services></Services>
+                <Footer></Footer>
                 
               </>} />
 
